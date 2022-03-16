@@ -1,0 +1,50 @@
+.contacto{
+    background: #24c76f;
+    
+}
+.formulario{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario__contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 2rem;
+}   
+
+.formulario__contacto label{
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    
+}
+
+.formulario__contacto input{
+    margin-bottom: 1rem;
+
+}
+
+.formulario__contacto .enviar{
+    width: 50%;
+    background: #000000;
+    color:#ffffff;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 25rem;
+    margin-top: 1rem;
+
+}
+
+@media screen and (max-width:375px) {
+
+    .formulario__contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        padding-left: 0;
+    }   
+
+}

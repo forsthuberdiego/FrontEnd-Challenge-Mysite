@@ -1,0 +1,160 @@
+.nombre__titulo{
+    display: grid;
+    grid-template-columns: 35% 35% 30% ;
+    grid-template-rows: 100%;
+    background: #000000;
+    color: #FFFFFF;
+    align-items: center;
+    width: auto;
+
+    border-bottom: 0.5rem solid #FFFFFF;
+}
+
+.nombreyapellido{
+    
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.nombreyapellido li{
+    list-style: none;
+    padding-left: 3rem;
+}   
+
+.nombre{
+    
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.apellido{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.redes{
+    
+    padding-top: 1rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+}
+.redes li{
+    align-items: flex-end   ;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 0.5rem;
+    margin-right: 2rem ;
+    
+}
+.redes li img{
+    height: 35px;
+}
+
+
+.espacio__foto{
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+    text-align: right;
+             
+}
+
+.foto__perfil{
+   height: 45vh;
+}
+
+
+/* responsivo */
+@media screen and (max-width:375px) {
+    .nombre__titulo{
+        grid-template-columns: 100% ;
+        grid-template-rows: 50% 50% 50%;
+        padding-bottom: 0;
+    }
+    .nombreyapellido{
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        text-align: left;
+    }
+    .nombreyapellido li{
+    padding-left: 0;
+    }
+
+    .redes{
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+        background: #000000;
+        padding-left: 0;
+        
+    }
+    .espacio__foto{
+        display: none;
+        grid-column: none;
+        grid-row: none;         
+    }
+    .redes li{
+        list-style: none;
+        margin-bottom: 0.5rem;
+        margin-right: 2 rem ;
+        padding-left: 0;
+        
+    }
+    .redes__lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nombre__titulo{
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 50% 50% ;
+        padding-bottom: 0;
+        
+    }
+    .nombreyapellido{
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        text-align: left;
+        padding-top: 2rem;
+    }
+    .nombreyapellido li{
+        padding-left: 0;
+    }
+
+    .redes{
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+        background: #000000;
+        padding-left: 0;
+        
+    }
+    
+    .redes li{
+        list-style: none;
+        margin-bottom: 0.5rem;
+        margin-right: 2 rem ;
+        padding-left: 0;
+        
+    }
+    .redes__lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+       
+    }
+    .espacio__foto{
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }   
+
+    .foto__perfil{
+        width: 80%;
+        height: 100%;
+    }
+
+}

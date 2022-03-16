@@ -1,0 +1,59 @@
+.experiencia{
+    background: #000000;
+    color: #ffffff;
+    
+}
+
+.contenedor{
+    display: flex;
+    justify-content: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+
+}
+
+.cuadro{
+    background-color: #ffffff;
+    margin: 0.2rem;
+    width: 30%;
+    margin-top: 0;
+}
+
+.titulo__exp{
+    margin-top: 0;
+    text-align: center;
+    background-color: #018A4c;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 1rem 0 1rem 0;
+    
+
+}
+
+.lista__exp{
+    background-color: #ffffff;
+    color: #6e6e6e;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    line-height: 2rem;
+}
+
+.lista__exp li{
+    list-style: "- ";
+}
+
+@media screen and (max-width:375px) {
+
+    .cuadro{
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cuadro{
+        width: 70%;
+        text-align: center;
+
+    }
+}

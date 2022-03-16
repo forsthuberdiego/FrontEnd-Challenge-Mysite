@@ -1,0 +1,33 @@
+body{
+    font-family: Manrope;
+    width: 100%;
+}
+
+.titulo__seccion{
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 2rem;
+    margin-top: 0;
+    padding-bottom: 2rem;
+}
+
+.container{
+    padding: 0 6rem 0  6rem;
+
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        padding: 0 1rem 0 1rem;
+    
+    }
+}
+
+@media only screen and (max-width: 768px) {    
+    .container{
+    padding: 0 1rem 0 1rem;
+
+    }
+}

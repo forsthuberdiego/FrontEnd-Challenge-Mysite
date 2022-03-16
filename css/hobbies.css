@@ -1,0 +1,89 @@
+.hobbies{
+    background: #018A4c;
+   
+}
+
+.hobbie__list{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-top: 0;
+    padding-bottom: 4rem;
+    row-gap: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.item__musica{
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 2 ;
+}
+
+.item__cocinar{
+    grid-column: 2 / 2 ;
+    grid-row: 1 / 2 ;
+}
+
+.item__ciclismo{
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 2 ;
+}
+
+.item__diy{
+    grid-column: 2 / 2 ;
+    grid-row: 2 / 2 ;
+}
+
+.item__img__musica{
+   background: url("../img/musica.jpg") no-repeat center / cover;
+   width: 50%;
+}
+
+.item__img__cocinar{
+    background: url("../img/cocina.png") no-repeat center / cover; 
+    width: 50%;
+}
+
+.item__img__ciclismo{
+    background: url("../img/ciclismo.png") no-repeat center / cover;
+    width: 50%;
+}
+
+.item__img__diy{
+    background: url("../img/diy.png") no-repeat center / cover;
+    width: 50%;
+}
+
+@media screen and (max-width:375px) {
+
+    .hobbie__list{
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+
+    .item__musica{
+        grid-column: 1 / 1 ;
+        grid-row: 1 / 2 ;
+    }
+    
+    .item__cocinar{
+        grid-column: 1 / 1 ;
+        grid-row: 2 / 3 ;
+    }
+    
+    .item__ciclismo{
+        grid-column: 1 / 1 ;
+        grid-row: 3 / 4 ;
+    }
+    
+    .item__diy{
+        grid-column: 1 / 1  ;
+        grid-row: 4 / 4 ;
+    }
+
+}

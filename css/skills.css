@@ -1,0 +1,169 @@
+.skills{
+    background: #24c76f;
+     
+}
+
+.skills__list{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    margin-top: 0;
+    padding-bottom: 4rem;
+    row-gap: 0.25rem;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 100%;
+}
+
+.item__html{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2 ;
+}
+.item__img__html{
+    background: url("../img/logo-html.png") no-repeat center / cover;
+    width: 50%;
+      
+}
+
+.item__css{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.item__img__css{
+    background: url("../img/logo-ccs.png") no-repeat center / cover;
+    width: 50%;
+
+}
+
+.item__javascript{
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+}
+
+.item__img__js{
+    background: url("../img/logo-js.png") no-repeat center / cover;
+    width: 50%;
+
+}
+
+.item__python{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.item__img__py{
+    background: url("../img/logo-phyton.png") no-repeat center / cover;
+    width: 50%;
+}
+
+.item__MyAdminPhp{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.item__img__php{
+    background: url("../img/logo-phpmyadmin.png") no-repeat center / cover;
+    width: 50%;
+}
+
+.item__cubase{
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+}
+
+.item__img__cb{
+    background: url("../img/logo-cubase.png") no-repeat center / cover;
+    width: 50%;
+}
+
+.item__nuendo{
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+}
+
+.item__img__ndo{
+    background: url("../img/logo-nuendo.png") no-repeat center / cover;
+    width: 50%;
+}
+
+.item__soundforge{
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+}
+
+.item__img__sf{
+    background: url("../img/logo-soundforge.png") no-repeat center / cover;
+    width: 50%;
+}
+
+.item__cakewalk{
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+
+.item__img__ckw{
+    background: url("../img/logo-cakewalk.png") no-repeat center / cover;
+    width: 50%;
+}
+
+
+
+.item__descripcion{
+    background: #ffffff;
+    text-align: center;
+    width: 50%;
+    padding: 0 1rem 0 1rem;
+
+}
+
+@media screen and (max-width:375px) {
+    .skills__list{
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+        height: 100%;
+        padding-bottom: 2rem;
+    }
+    .item__html{
+        grid-column: 1 / 1;
+        grid-row: 1 /2 ;
+    }
+    .item__css{
+        grid-column: 1 / 1;
+        grid-row: 2 / 3 ;
+    }
+    .item__javascript{
+        grid-column: 1 / 1;
+        grid-row: 3 / 4 ;
+    }
+    .item__python{
+        grid-column: 1 / 1;
+        grid-row: 4 / 5;
+    }
+    .item__MyAdminPhp{
+        grid-column: 1 / 1;
+        grid-row: 5 / 6 ;
+    }
+    .item__cubase{
+        grid-column: 1 / 1;
+        grid-row: 6 / 7 ;
+    }
+    .item__nuendo{
+        grid-column: 1 / 1;
+        grid-row: 7 / 8;
+    }
+    .item__soundforge{
+        grid-column: 1 / 1;
+        grid-row: 8 / 9 ;
+    }
+    .item__cakewalk{
+        grid-column: 1 / 1;
+        grid-row: 2 / 3 ;
+    }
+
+}
